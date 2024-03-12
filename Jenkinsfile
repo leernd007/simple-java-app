@@ -11,6 +11,13 @@ pipeline {
     // }
 	
     stages {
+        stage('pull app') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/leernd007/simple-java-app.git'
+
+            }
+        }
         // stage('Testing') {
         //     steps {
         //         withEnv(["JFROG_BINARY_PATH=${tool 'jfrog-cli'}"]) {
