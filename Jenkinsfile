@@ -10,7 +10,6 @@ pipeline {
         CREDENTIALS_ID = 'jfrog-cli-access-token'
         GIT_REPO = 'https://github.com/leernd007/simple-java-app'
     }
-
     stages {
         stage('Checkout') {
             steps {
