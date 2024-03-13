@@ -4,7 +4,6 @@ pipeline {
         maven "maven 3"
         jfrog 'jfrog-cli'
     }
-
     environment {
         ARTIFACTORY_REPO = 'andrii-java-app-generic-local'
         ARTIFACTORY_URL = 'https://gddfg.jfrog.io/artifactory'
